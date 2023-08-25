@@ -1,5 +1,4 @@
 import useMobileMenu from "../store";
-import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const { isActive, changeIsActive } = useMobileMenu((s) => s);

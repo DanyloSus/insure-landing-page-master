@@ -1,6 +1,6 @@
 const Block = () => {
   return (
-    <section className="flex justify-center mt-[160px] lg:px-3">
+    <section className="flex justify-center mt-[160px] lg:px-3 reveal">
       <div className="w-[1110px] bg-dark-violet text-very-light-gray flex justify-between items-center relative h-[250px] px-[80px] lg:w-auto lg:text-center lg:flex-col lg:px-0 lg:py-[70px] lg:h-auto">
         <img
           src="./bg-pattern-how-we-work-desktop.svg"

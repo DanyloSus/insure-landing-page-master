@@ -2,7 +2,7 @@ import Card from "./Diff/Card";
 
 const Diff = () => {
   return (
-    <section className="flex justify-center mt-[305px]">
+    <section className="flex justify-center mt-[305px] reveal">
       <div className="w-[1110px] lg:w-auto lg:text-center">
         <hr />
         <h1 className="lg:text-5xl lg:my-[92px]">We're different</h1>

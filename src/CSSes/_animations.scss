@@ -1,0 +1,58 @@
+header {
+  animation: headerAnim 3s ease-in-out 0s backwards;
+}
+
+@keyframes headerAnim {
+  0% {
+    left: -50%;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+.bott-anim {
+  animation: bott-anim 1s ease-in-out 1s backwards;
+}
+
+@keyframes bott-anim {
+  0% {
+    position: relative;
+    bottom: -50%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+.top-anim {
+  animation: top-anim 1s ease-in-out 1s backwards;
+}
+
+@keyframes top-anim {
+  0% {
+    position: relative;
+    top: -50%;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.reveal {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+  &.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

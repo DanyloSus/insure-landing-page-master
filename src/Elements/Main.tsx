@@ -18,11 +18,11 @@ const Main = () => {
         <img
           src="./image-intro-mobile.jpg"
           alt="image intro mobile"
-          className="w-screen object-cover hidden lg:block"
+          className="w-screen object-cover hidden lg:block top-anim"
         />
       </div>
       <div className=" h-[650px] flex pt-[105px] justify-center py-[92px] lg:px-3">
-        <div className="w-[570px] lg:w-auto lg:text-center relative">
+        <div className="w-[570px] lg:w-auto lg:text-center relative bott-anim">
           <img
             src="./bg-pattern-intro-right-mobile.svg"
             alt="bg pattern intro right mobile"
@@ -48,7 +48,7 @@ const Main = () => {
           <img
             src="./image-intro-desktop.jpg"
             alt="image intro desktop"
-            className="h-[650px] w-[540px] object-cover lg:hidden"
+            className="h-[650px] w-[540px] object-cover lg:hidden top-anim"
           />
         </div>
       </div>
