@@ -27,7 +27,7 @@ h6 {
 }
 
 hr {
-  @apply w-[150px] border-very-light-gray;
+  @apply w-[150px] border-very-light-gray lg:border-dark-grayish-violet lg:mx-auto;
 }
 
 h1 {
@@ -35,5 +35,5 @@ h1 {
 }
 
 section div {
-  @apply px-3;
+  @apply px-3 lg:px-0;
 }

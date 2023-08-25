@@ -3,10 +3,10 @@ import Card from "./Diff/Card";
 const Diff = () => {
   return (
     <section className="flex justify-center mt-[305px]">
-      <div className="w-[1110px]">
+      <div className="w-[1110px] lg:w-auto lg:text-center">
         <hr />
-        <h1>We're different</h1>
-        <div className="flex mt-[96px] gap-[40px] items-center justify-center">
+        <h1 className="lg:text-5xl lg:my-[92px]">We're different</h1>
+        <div className="flex mt-[96px] gap-[40px] items-center justify-center lg:flex-col lg:mt-0">
           <Card
             img="icon-snappy-process.svg"
             h2="Snappy Process"

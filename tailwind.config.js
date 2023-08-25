@@ -11,6 +11,9 @@ export default {
         "dark-grayish-violet": "hsl(273, 4%, 51%)",
         "very-light-gray": "hsl(0, 0%, 98%)",
       },
+      screens: {
+        lg: { max: "768px" },
+      },
     },
   },
   plugins: [],

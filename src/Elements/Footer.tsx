@@ -4,10 +4,15 @@ const Footer = () => {
       <img
         src="./bg-pattern-footer-desktop.svg"
         alt="bg pattern footer desktop"
-        className="absolute top-0 left-0"
+        className="absolute top-0 left-0 lg:hidden"
       />
-      <div className="w-[1110px] px-2">
-        <div className="flex justify-between items-center">
+      <img
+        src="./bg-pattern-footer-mobile.svg"
+        alt="bg pattern footer mobile"
+        className="absolute top-0 left-0 hidden lg:block"
+      />
+      <div className="w-[1110px] px-2 lg:px-4">
+        <div className="flex justify-between items-center lg:flex-col lg:gap-6">
           <img src="./logo.svg" alt="logo" />
           <div className="flex justify-center items-center gap-2">
             <svg
@@ -41,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="w-full border-3 my-12 relative z-20 border-dark-grayish-violet" />
-        <div className="flex justify-between items-start uppercase">
+        <div className="flex justify-between items-start uppercase lg:flex-col lg:text-center lg:justify-center lg:w-full lg:items-center lg:gap-6">
           <div>
             <p className="">our company</p>
             <nav className="">
