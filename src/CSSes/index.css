@@ -4,6 +4,7 @@
 @tailwind utilities;
 :root {
   font-family: "Karla", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -13,4 +14,58 @@ h4,
 h5,
 h6 {
   font-family: "DM Serif Display", serif;
+}
+
+.button-black {
+  @apply uppercase border-2 border-very-dark-violet px-6 py-2 transition-colors hover:bg-very-dark-violet hover:text-very-light-gray;
+}
+
+.button-white {
+  @apply uppercase border-2 border-very-light-gray px-6 py-2 transition-colors hover:bg-very-light-gray hover:text-very-dark-violet;
+}
+
+hr {
+  @apply w-[150px] border-very-light-gray;
+}
+
+h1 {
+  @apply text-[80px] leading-[75px];
+}
+
+section div {
+  @apply px-3;
+}
+
+header a {
+  @apply text-dark-grayish-violet hover:text-very-dark-violet transition-colors font-bold;
+}
+
+footer nav {
+  @apply flex flex-col gap-3 mt-6 text-very-dark-violet font-bold;
+}
+footer p {
+  @apply font-bold text-dark-grayish-violet;
+}
+footer svg {
+  @apply w-6 h-6 fill-dark-grayish-violet hover:fill-very-dark-violet cursor-pointer transition-colors;
+}
+footer a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* Adjust as needed to control the distance between text and line */
+  font-size: 18px;
+}
+footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: hsl(270, 9%, 17%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+footer a:hover::after {
+  transform: scaleX(1);
 }/*# sourceMappingURL=index.css.map */

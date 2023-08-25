@@ -1,0 +1,33 @@
+footer {
+  nav {
+    @apply flex flex-col gap-3 mt-6 text-very-dark-violet font-bold;
+  }
+  p {
+    @apply font-bold text-dark-grayish-violet;
+  }
+  svg {
+    @apply w-6 h-6 fill-dark-grayish-violet hover:fill-very-dark-violet cursor-pointer transition-colors;
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Adjust as needed to control the distance between text and line */
+    font-size: 18px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: hsl(270, 9%, 17%);
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+}
